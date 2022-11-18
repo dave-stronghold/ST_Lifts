@@ -1,0 +1,20 @@
+.doorscontainer{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    .maincon{
+        width:1200px;
+        height:294px;
+        // background-color: rgb(213, 103, 103);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.doorscardcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

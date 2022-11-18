@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+.title {
+  font-weight: 400;
+  font-size: 33.18px;
+  height: 40px;
+}
+
+.card-container {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 16px;
+  background: #ffffff;
+  background-blend-mode: normal;
+  box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+}
+
+.assetContainer {
+  position: relative;
+  left: 16px;
+  top: 16px;
+  width: 168px;
+  height: 144px;
+  background: #000000;
+  background-blend-mode: normal;
+}
+
+.tsf {
+  position: relative;
+  left: 24px;
+  top: 24px;
+  width: 153px;
+  height: 24px;
+
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.error {
+  position: relative;
+  align-self: center;
+  color: red;
+  bottom: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+*{
+  scroll-behavior: smooth;
+}
+li>a{
+  text-decoration: none;
+  color:#000000;
+  font-weight: 400;
+  transition: 0.3s ease-in-out all;
+  &:hover {
+    cursor: pointer;
+    // letter-spacing: 0.05cm;
+    font-weight: 500;
+    transform: scale(1.2);
+    color: #FF7373;
+
+}
+}
+li>a[isactive="active"]{
+  color:#FF7373;
+  font-weight: 500;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+.isocontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+.iso{
+  border-radius: 50px;
+  width: 500px;
+  height:500px;
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  stroke-linejoin:round;
+  stroke-miterlimit:2px;
+}
+
+path,#i,#e{
+  
+  animation:fade 2s ease-in-out infinite alternate ;
+}
+#b,#j{
+  animation:hover 2s ease-in-out infinite alternate ;
+}
+
+
+@keyframes fade {
+  from{
+      opacity: 15%;
+      
+  }
+  to{
+      opacity: 100%;
+  }
+}
+
+@keyframes hover {
+  from{
+      transform: translateY(-30px);
+      
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
+@keyframes rotat {
+  from{
+      transform: rotateY(359deg);
+      
+  }
+  to{
+    transform: rotateY(0deg);
+  }
+}
